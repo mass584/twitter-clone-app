@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "go.goroot": "~/.asdf/installs/golang/1.21.6/go",
+  "go.gopath": "~/.asdf/installs/golang/1.21.6/packages",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  }
+}

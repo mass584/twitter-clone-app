@@ -1,0 +1,2 @@
+CREATE DATABASE twitter_clone_app_development CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE twitter_clone_app_test CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

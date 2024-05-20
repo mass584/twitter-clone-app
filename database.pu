@@ -1,0 +1,29 @@
+@startuml database
+
+package "database" {
+  entity "follows" {
+    + follower_user_id : フォローしたユーザーID [PK]
+    + followed_user_id : フォローされたユーザーID [PK]
+    --
+  }
+
+  entity "tweets" {
+    + id : ツイートID [PK]
+    --
+    user_id : ユーザーID
+    text_content : ツイート内容
+    tweet_at : ツイート日時
+  }
+
+  entity "users" {
+    + id : ユーザーID [PK]
+    --
+    display_name : 表示名
+    email : メールアドレス
+  }
+}
+
+users ||-ri-o{ tweets
+users ||-le-o{ follows
+users ||-le-o{ follows
+@enduml
